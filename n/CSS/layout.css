@@ -1,0 +1,112 @@
+/* layout CWS beta v.0.0.1 */
+
+*{box-sizing: border-box; padding: 0; margin: 0;}
+
+nav { position: fixed;height:auto; align-items: center; justify-content:center;}
+header { height: 100vh; width: 100%; align-items: center; justify-content:center;}
+footer { align-items: center; justify-content: center; height:10vh;}
+h1,h2,h3,h4,h5,h6 { text-align: center ; margin:1% auto;}
+img { width: 100%;}
+
+/* css reutilizável */
+.linha {display: flex; width: 100%;}
+.caixa { width: 94%; margin: 3% auto; text-align: center; display:block;}
+.coluna2Col { width: 44%; margin: 3% auto;display: flex; align-items: center;}
+.coluna3Col { width: 30%; margin: 3% auto;}
+.coluna4Col { width: 19%; margin: 3% auto; display: flex; align-items: center;}
+.linkMenu { width: max-content; margin: auto; padding: 3px;}
+.copyRightLinkCWS { width: max-content; margin: 1% auto; padding: 1%;}
+.imgProduto{ max-width: 80%; margin:3% 10%;}
+.linkProduto { text-decoration: none; padding: 1%; margin-top:5px;}
+.textoProduto { margin: 3% 0;}
+.col-Sec2 { height:auto;}
+.bgimg { background-image: url("../imagens/canvaBlogDasBruxas.png");background-size: cover;background-position: right;}
+.iconeBTN{width: 70px;}
+.icineBTN2{ width:50px;}
+.logoAA { width: 45px; border-radius: 10px;}
+.logoIE { width: 50px; border-radius: 10px;}
+.disable { display: none;}
+.imgProdutoModal { width:30%;}
+
+/* css unico */
+#btnOpenMenu
+{ display: none; width: 10vw; height:auto; background: transparent;
+border: none; color: gray; font-size: 4vh;}
+#logo { width: 60%; height: max-content; display: flex; align-items: center; justify-content:center;}
+#menu { width: 40%; transition: all 1.3s linear;}
+#contMenu { width: 100%; display: flex;  overflow: hidden;}
+#btnCloseMenu
+{ display: none; width: 10vw; height: 10vh;
+background: transparent; border: none; color: gray; font-size:large;}
+#btnContatoWhats{ width: 70px; height: 70px; margin: auto;}
+#btnContatoMail{ width: 50px; height: 50px; margin:1% auto;}
+
+
+/* responsivo - consulta de mídias */
+
+@media only screen and (max-width: 900px) {
+   #headerH
+{ background-image: url("../imagens/bannerMobileDasBruxas.png");
+background-size: cover; background-position:center;}
+#headerPg2
+{ background-image: url("../imagens/bannerMobileAA2.png");
+background-size: cover; background-position:center;}
+#headerPg3
+{ background-image: url("../imagens/bannerMobileIrhis.png");
+background-size: cover; background-position:center;}
+#headerPg4
+{ background-image: url("../imagens/bannerMobileDasBruxas.png");
+background-size: cover; background-position:center;}
+footer { background-image: url("../imagens/images.jpg");}
+ .linha {flex-wrap: wrap;}
+ nav { flex-wrap: nowrap; height: 8vh;}
+ #logo { width: 90vw;}
+ #menu { position: absolute;top: 0; z-index: 1; width: 100%; height: 0; overflow: hidden;
+    background-image: url("../imagens/BackGroudMenu.png");background-position:center;}
+ #contMenu {display:block; height: 100vh;}
+ .linkMenu { display: block; margin-top: 8vh; font-size: x-large;}
+ #btnOpenMenu, #btnCloseMenu { display:block;}
+ .coluna3Col {width: 47%;}
+ .imgProdutoModal {width:70%;}
+ 
+
+}
+
+@media only screen and (max-width: 600px) {
+
+ .coluna2Col {width: 94%;}
+ .coluna3Col {width: 94%;}
+ .coluna4Col {width: 94%;}
+
+}
+
+/* Estilo Blog Das Bruxas */
+
+body { color:white; background-color: black; font-family: sans-serif;}
+nav { background-color:rgba(75,75,75,0.7);}
+#headerH
+{ background-image: url("../imagens/bannerDasBruxas.png");
+background-size: cover; background-position:center;}
+#headerPg2
+{ background-image: url("../imagens/bannerAA2.png");
+background-size: cover; background-position:center;}
+#headerPg3
+{ background-image: url("../imagens/canvaBlogDasBruxas.png");
+background-size: cover; background-position:center;}
+#headerPg4
+{ background-image: url("../imagens/bannerDasBruxas.png");
+background-size: cover; background-position:center;}
+footer { background-image: url("../imagens/images.jpg");}
+
+.links { color:ivory;}
+.linkMenu {  text-decoration: none; color:ivory; text-transform: uppercase;}
+.linkProduto { background-color: gray; color: gainsboro;}
+.copyRightLinkCWS { background-color: rgba(75, 75, 75, 0.5);}
+.ativo { border-bottom: 2px solid darkgrey;}
+.col-Sec2 { background-image: url("../imagens/BackGroudMenu.png");background-size: cover;background-position: center;}
+.col-Sec3 { background-color: rgba(75, 75, 75, 0.397);}
+.bgColor1 { background-color: rgba(75, 75, 75, 0.7); width: max-content; padding: 1%;}
+
+#sec2 { background-image: url("");}
+.sec3 { background-image:linear-gradient( rgb(0, 0, 0), rgb(54, 0, 126));}
+#btnOpenMenu, #btnCloseMenu { color:ivory;}
